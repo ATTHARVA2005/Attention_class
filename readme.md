@@ -106,6 +106,5 @@ The application captures frames from your webcam at regular intervals and sends 
 - [MediaPipe](https://mediapipe.dev/) for their open-source computer vision models
 - [Flask](https://flask.palletsprojects.com/) for the lightweight Python web framework
 - [OpenCV](https://opencv.org/) for computer vision capabilities
-- [The organizers of Hackathon Name] for the opportunity to create this project
 
 ---
