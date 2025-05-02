@@ -2,7 +2,7 @@
 
 ![AttentionMinder Logo](https://img.shields.io/badge/Noobly%20Pros-AttentionMinder-4a6bff)
 
-## 🏆 Hackathon Project by Team "Noobly Pros"
+## 🏆 Project by Team "Noobly Pros"
 
 AttentionMinder is an intelligent real-time attention monitoring system that helps users maintain focus during work or study sessions by tracking posture and eye status.
 
@@ -98,10 +98,8 @@ The application captures frames from your webcam at regular intervals and sends 
 ## 👥 Team Members
 
 **Team Noobly Pros:**
-- [Team Member 1] - Backend Developer & ML Engineer
-- [Team Member 2] - Frontend Developer & UI Designer
-- [Team Member 3] - Computer Vision Specialist
-- [Team Member 4] - Project Manager & UX Researcher
+- Attharva Gupta
+- Anubhab Das
 
 ## 🙏 Acknowledgements
 
@@ -111,5 +109,3 @@ The application captures frames from your webcam at regular intervals and sends 
 - [The organizers of Hackathon Name] for the opportunity to create this project
 
 ---
-
-© 2025 Team Noobly Pros | Created for [Hackathon Name]
