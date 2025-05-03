@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -48,6 +48,144 @@
         
         <div class="footer">
             <p>Attention Tracker - Face and Eye Tracking Application</p>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attention Tracker Pro</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar removed as requested -->
+
+        <div class="main-content">
+            <header class="top-bar">
+                <div class="page-title">
+                    <div class="logo">
+                        <i class="fas fa-eye logo-icon"></i>
+                        <h1>Focus<span>Track</span></h1>
+                    </div>
+                    <p class="subtitle">Track your attentiveness in real-time</p>
+                </div>
+                <div class="app-version">
+                    <p>FocusTrack v1.0</p>
+                </div>
+            </header>
+
+            <div class="dashboard-content">
+                <div class="video-section">
+                    <div class="video-container">
+                        <div class="video-overlay">
+                            <div class="pulse-circle"></div>
+                            <div class="tracking-badge" id="trackingStatus">
+                                <span class="dot"></span> Not Tracking
+                            </div>
+                        </div>
+                        <img id="videoStream" src="{{ url_for('video_feed') }}" alt="Video Stream">
+                    </div>
+                    <div class="video-controls">
+                        <button id="startBtn" class="action-btn start-btn">
+                            <i class="fas fa-play"></i> Start Tracking
+                        </button>
+                        <button id="stopBtn" class="action-btn stop-btn" disabled>
+                            <i class="fas fa-stop"></i> Stop Tracking
+                        </button>
+                    </div>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-hourglass-half"></i>
+                        </div>
+                        <div class="stat-details">
+                            <h3 class="stat-title">Session Duration</h3>
+                            <p id="trackingTime" class="stat-value">00:00:00</p>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="stat-details">
+                            <h3 class="stat-title">Current Status</h3>
+                            <p id="currentStatus" class="stat-value status-not-tracking">Not Tracking</p>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <div class="stat-details">
+                            <h3 class="stat-title">Focus Score</h3>
+                            <div class="progress-ring-container">
+                                <div class="progress-ring">
+                                    <div class="progress-circle" id="progressCircle" style="--progress: 0%"></div>
+                                    <div class="progress-text" id="attentivenessText">0%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <div class="stat-details">
+                            <h3 class="stat-title">Attentiveness</h3>
+                            <div class="progress-container">
+                                <div id="attentivenessBar" class="progress-bar" style="width: 0%">0%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="summary-section">
+                    <h3 class="section-title">Session Summary</h3>
+                    <div class="summary-cards">
+                        <div class="summary-card">
+                            <div class="summary-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="summary-details">
+                                <h4>Attentive Time</h4>
+                                <p id="attentiveTime">00:00:00</p>
+                            </div>
+                        </div>
+                        <div class="summary-card">
+                            <div class="summary-icon">
+                                <i class="fas fa-times-circle"></i>
+                            </div>
+                            <div class="summary-details">
+                                <h4>Distracted Time</h4>
+                                <p id="distractedTime">00:00:00</p>
+                            </div>
+                        </div>
+                        <div class="summary-card">
+                            <div class="summary-icon">
+                                <i class="fas fa-crosshairs"></i>
+                            </div>
+                            <div class="summary-details">
+                                <h4>Focus Cycles</h4>
+                                <p id="focusCycles">0</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
