@@ -42,8 +42,8 @@ AttentionMinder uses computer vision to detect signs of inattention in real-time
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/noobly-pros/attention-minder.git
-cd attention-minder
+git clone https://github.com/ATTHARVA2005/Attention_class.git
+cd Attention_class
 ```
 
 2. Create and activate a virtual environment:
