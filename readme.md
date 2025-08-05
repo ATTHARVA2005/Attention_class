@@ -1,10 +1,10 @@
-# AttentionMinder
+# AttentionDetector
 
 ![AttentionMinder Logo](https://img.shields.io/badge/Noobly%20Pros-AttentionMinder-4a6bff)
 
 ## 🏆 Project by Team "Noobly Pros"
 
-AttentionMinder is an intelligent real-time attention monitoring system that helps users maintain focus during work or study sessions by tracking posture and eye status.
+AttentionDetector is an intelligent real-time attention monitoring system that helps users maintain focus during work or study sessions by tracking posture and eye status.
 
 ## 📋 Table of Contents
 
