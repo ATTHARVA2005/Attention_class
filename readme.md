@@ -1,4 +1,4 @@
-# AttentionDetector
+# FocusTrack
 
 ![AttentionMinder Logo](https://img.shields.io/badge/Noobly%20Pros-AttentionMinder-4a6bff)
 
